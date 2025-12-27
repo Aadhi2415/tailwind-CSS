@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DataFlow — Smart Business Platform</title>
+
+<style>
+:root{
+  --main:#22c55e;
+  --accent:#06b6d4;
+  --bg:#020617;
+  --panel:#0b1324;
+  --text:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:linear-gradient(180deg,#020617,#000);
+  color:var(--text);
+}
+
+/* HEADER */
+header{
+  padding:22px 70px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+header h2{
+  color:var(--main);
+}
+header a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#cbd5f5;
+  font-weight:600;
+}
+header a:hover{color:white;}
+
+/* HERO */
+.hero{
+  padding:120px 70px;
+  text-align:center;
+}
+.hero h1{
+  font-size:60px;
+}
+.hero span{
+  color:var(--accent);
+}
+.hero p{
+  margin:30px auto;
+  max-width:750px;
+  font-size:20px;
+  color:#cbd5f5;
+}
+.hero button{
+  padding:16px 44px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,var(--main),var(--accent));
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+  padding:100px 70px;
+}
+section h2{
+  font-size:42px;
+  text-align:center;
+  margin-bottom:50px;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.feature{
+  background:var(--panel);
+  padding:35px;
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,.08);
+}
+.feature h3{
+  color:var(--main);
+  margin-bottom:10px;
+}
+
+/* SPLIT SECTION */
+.split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.split img{
+  width:100%;
+  border-radius:22px;
+  box-shadow:0 30px 70px rgba(0,0,0,.6);
+}
+
+/* STATS */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:25px;
+  text-align:center;
+}
+.stat{
+  background:var(--panel);
+  padding:30px;
+  border-radius:20px;
+  border-top:4px solid var(--accent);
+}
+.stat h1{
+  font-size:40px;
+  color:var(--main);
+}
+
+/* PRICING */
+.pricing{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.plan{
+  background:var(--panel);
+  padding:40px;
+  border-radius:24px;
+  border:1px solid rgba(255,255,255,.08);
+  text-align:center;
+}
+.plan h3{color:var(--accent);}
+.plan h1{
+  font-size:46px;
+  margin:20px 0;
+}
+.plan button{
+  margin-top:20px;
+  padding:14px 38px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,var(--main),var(--accent));
+  font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+  padding:40px;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.08);
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>DataFlow</h2>
+  <div>
+    <a href="#features">Features</a>
+    <a href="#analytics">Analytics</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#">Login</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Manage Your Data.<br><span>Grow Your Business.</span></h1>
+  <p>DataFlow helps teams analyze, automate, and scale operations using a secure cloud platform.</p>
+  <button>Get Started Free</button>
+</section>
+
+<section id="features">
+  <h2>Platform Features</h2>
+  <div class="features">
+    <div class="feature"><h3>Real-Time Analytics</h3><p>Live data dashboards</p></div>
+    <div class="feature"><h3>Automation Engine</h3><p>No-code workflow tools</p></div>
+    <div class="feature"><h3>Secure Storage</h3><p>End-to-end encryption</p></div>
+    <div class="feature"><h3>Team Management</h3><p>Role-based access</p></div>
+  </div>
+</section>
+
+<section id="analytics">
+  <h2>Powerful Insights</h2>
+  <div class="split">
+    <div>
+      <p style="color:#cbd5f5;font-size:18px">
+        Monitor performance, detect trends, and make smarter decisions with DataFlow’s AI-assisted insights.
+      </p>
+      <br>
+      <p>✔ Predictive Reports<br>✔ Smart Alerts<br>✔ Custom Dashboards</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1600&q=80">
+  </div>
+</section>
+
+<section>
+  <h2>Trusted Performance</h2>
+  <div class="stats">
+    <div class="stat"><h1>99.9%</h1><p>Uptime</p></div>
+    <div class="stat"><h1>1M+</h1><p>Users</p></div>
+    <div class="stat"><h1>80+</h1><p>Countries</p></div>
+    <div class="stat"><h1>24/7</h1><p>Support</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="pricing">
+    <div class="plan">
+      <h3>Basic</h3>
+      <h1>₹0</h1>
+      <p>Starter analytics</p>
+      <button>Select</button>
+    </div>
+    <div class="plan">
+      <h3>Professional</h3>
+      <h1>₹799</h1>
+      <p>Automation + insights</p>
+      <button>Choose</button>
+    </div>
+    <div class="plan">
+      <h3>Enterprise</h3>
+      <h1>Custom</h1>
+      <p>Dedicated infrastructure</p>
+      <button>Contact</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 DataFlow — Smart Business Platform
+</footer>
+
+</body>
+</html>
